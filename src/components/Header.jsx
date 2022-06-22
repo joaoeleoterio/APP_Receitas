@@ -22,7 +22,7 @@ function Header({ page }) {
 
   const searchBtn = (
     <button className="header-btn" type="button" onClick={ showInput }>
-      <img src={ searchIcon } alt="Imagem de Lupa" data-testid="search-top-btn" />
+      <img src={ searchIcon } alt="Lupa" data-testid="search-top-btn" />
     </button>
   );
 
