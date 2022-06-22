@@ -1,0 +1,24 @@
+.loading {
+  animation: loading 750ms infinite linear;
+  border: 0.25em solid var(--btn-background);
+  border-radius: 50%;
+  border-top: 0.25em solid transparent;
+  display: inline-block;
+  height: 2em;
+  width: 2em;
+}
+
+.loading > span {
+  visibility: hidden;
+}
+
+@keyframes loading {
+
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

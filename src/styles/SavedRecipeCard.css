@@ -1,0 +1,82 @@
+.done-recipe-container {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.3);
+  display: flex;
+  height: 140px;
+  position: relative;
+  width: 100%;
+}
+
+.image-btn-container {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  cursor: pointer;
+  flex-shrink: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.done-recipe-subcontainer {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 15px;
+  overflow: auto;
+  padding: 5px;
+}
+
+.done-recipe-subcontainer > :nth-child( 1 ) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.done-recipe-subcontainer > :nth-child( 1 ) > :nth-child( 1 ) {
+  display: flex;
+  flex-direction: column;
+}
+
+.done-recipe-subcontainer > :nth-child( 1 ) > :nth-child( 2 ) {
+  display: flex;
+}
+
+.done-recipe-category {
+  color: grey;
+}
+
+.done-recipe-name {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 0;
+  position: relative;
+  width: fit-content;
+}
+
+.done-recipe-name:after {
+  background-color: black;
+  bottom: 0.1em;
+  content: '';
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transition-duration: 200ms;
+  width: 0;
+}
+
+.done-recipe-name:hover:after {
+  width: 100%;
+}
+
+.recipe-tag-container {
+  display: flex;
+  gap: 8px;
+}
+
+.recipe-tag-container > * {
+  background-color: #ecdede;
+  border-radius: 1em;
+  padding: 0 8px;
+}

@@ -1,0 +1,19 @@
+.profile-buttons {
+  display: flex;
+  flex-flow: column;
+  height: 200px;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 10px;
+  width: 60%;
+}
+
+.profile-buttons button {
+  height: 50px;
+  width: 100%;
+}
+
+.profile-email {
+  font-size: 1.5rem;
+  text-align: center;
+}

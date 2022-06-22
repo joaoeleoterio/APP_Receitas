@@ -1,0 +1,43 @@
+footer {
+  align-items: center;
+  background-color: white;
+  bottom: 0;
+  box-shadow: 0 3px 5px 5px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+}
+
+footer > * {
+  padding: 2px;
+  transition-duration: 200ms;
+}
+
+footer > *.active:after {
+  animation: actived 200ms;
+  background-color: black;
+  bottom: 0.1em;
+  content: '';
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+footer > .active, footer > *:hover, footer > *:active {
+  transform: scale(1.2);
+}
+
+@keyframes actived {
+
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}

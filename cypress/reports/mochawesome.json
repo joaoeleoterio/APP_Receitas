@@ -1,0 +1,207 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 4,
+    "passes": 3,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-04-26T22:34:28.639Z",
+    "end": "2022-04-26T22:34:40.647Z",
+    "duration": 12008,
+    "testsRegistered": 4,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e76e91ba-f360-47c5-b931-a408d8050c60",
+      "title": "",
+      "fullFile": "cypress/integration/09-header_spec.js",
+      "file": "cypress/integration/09-header_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "af2f336a-bb60-461b-bc72-5a0afe0a6ee9",
+          "title": "9 - Implemente os elementos do header na tela principal de receitas, respeitando os atributos descritos no protótipo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Tem os data-testids profile-top-btn, page-title e search-top-btn",
+              "fullTitle": "9 - Implemente os elementos do header na tela principal de receitas, respeitando os atributos descritos no protótipo Tem os data-testids profile-top-btn, page-title e search-top-btn",
+              "timedOut": null,
+              "duration": 384,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/foods');\ncy.get('[data-testid=\"profile-top-btn\"]');\ncy.get('[data-testid=\"page-title\"]');\ncy.get('[data-testid=\"search-top-btn\"]');",
+              "err": {},
+              "uuid": "db996d2c-fcfb-48b1-b249-358ab3f09b65",
+              "parentUUID": "af2f336a-bb60-461b-bc72-5a0afe0a6ee9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "db996d2c-fcfb-48b1-b249-358ab3f09b65"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 384,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "b7d2aaf1-e2c9-4a2e-9ce9-0e55c87823c9",
+          "title": "11 - Redirecione a pessoa usuária para a tela de perfil ao clicar no botão de perfil",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "A mudança de tela ocorre corretamente",
+              "fullTitle": "11 - Redirecione a pessoa usuária para a tela de perfil ao clicar no botão de perfil A mudança de tela ocorre corretamente",
+              "timedOut": null,
+              "duration": 10116,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/foods');\ncy.get('[data-testid=\"page-title\"]').contains('Foods');\ncy.get('[data-testid=\"profile-top-btn\"]').click();\ncy.get('[data-testid=\"page-title\"]').contains('Profile');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Foods' within the element: <h1> but never did.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Foods' within the element: <h1> but never did.\n    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/09-header_spec.js:194:42)",
+                "diff": null
+              },
+              "uuid": "2d1cbc2a-79c1-4dd8-92ad-a8ddca57df49",
+              "parentUUID": "b7d2aaf1-e2c9-4a2e-9ce9-0e55c87823c9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "2d1cbc2a-79c1-4dd8-92ad-a8ddca57df49"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 10116,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "d0bd7238-876d-4d0f-bc17-a76c4c8e3214",
+          "title": "12 - Desenvolva o botão de busca que, ao ser clicado, a barra de busca deve aparecer. O mesmo serve para escondê-la",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Ao clicar no botão de busca pela primeira vez a barra de busca aparece",
+              "fullTitle": "12 - Desenvolva o botão de busca que, ao ser clicado, a barra de busca deve aparecer. O mesmo serve para escondê-la Ao clicar no botão de busca pela primeira vez a barra de busca aparece",
+              "timedOut": null,
+              "duration": 211,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/foods');\ncy.get('[data-testid=\"search-input\"]').should('not.exist');\ncy.get('[data-testid=\"search-top-btn\"]').click();\ncy.get('[data-testid=\"search-input\"]');",
+              "err": {},
+              "uuid": "3c4068c7-7165-4143-b82f-7de7f71b8e3d",
+              "parentUUID": "d0bd7238-876d-4d0f-bc17-a76c4c8e3214",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ao clicar no botão de busca pela segunda vez a barra de busca desaparece",
+              "fullTitle": "12 - Desenvolva o botão de busca que, ao ser clicado, a barra de busca deve aparecer. O mesmo serve para escondê-la Ao clicar no botão de busca pela segunda vez a barra de busca desaparece",
+              "timedOut": null,
+              "duration": 256,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/foods');\ncy.get('[data-testid=\"search-top-btn\"]').click();\ncy.get('[data-testid=\"search-input\"]');\ncy.get('[data-testid=\"search-top-btn\"]').click();\ncy.get('[data-testid=\"search-input\"]').should('not.exist');",
+              "err": {},
+              "uuid": "7219f84f-2f5e-4c1a-a717-228feaef2542",
+              "parentUUID": "d0bd7238-876d-4d0f-bc17-a76c4c8e3214",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3c4068c7-7165-4143-b82f-7de7f71b8e3d",
+            "7219f84f-2f5e-4c1a-a717-228feaef2542"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 467,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

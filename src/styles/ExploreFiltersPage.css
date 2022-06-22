@@ -1,0 +1,32 @@
+.explore-filters-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.explore-filters-container > * {
+  background-color: transparent;
+  border: 2px solid var(--btn-background);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: black;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 700;
+  overflow: hidden;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 200ms;
+  width: 90%;
+}
+
+.explore-filters-container > *:hover {
+  background-color: var(--btn-background);
+}
+
+.explore-filters-container > *:active {
+  background-color: var(--btn-background-clicked);
+  border: 2px solid var(--btn-background-clicked);
+}

@@ -1,0 +1,27 @@
+.copy-tooltip {
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  left: 50%;
+  padding: 5px;
+  position: fixed;
+  top: 10px;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.btn-interact {
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1em;
+  height: 2em;
+  transition-duration: 200ms;
+  width: 2em;
+}
+
+.btn-interact:hover {
+  filter: drop-shadow(0 0 2px black);
+}

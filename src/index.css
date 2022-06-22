@@ -1,0 +1,52 @@
+html {
+  --btn-background: rgb(5, 184, 178);
+  --btn-background-clicked: rgb(4, 165, 160);
+}
+
+body {
+  background-color: rgb(236, 255, 254);
+  margin: 0;
+  font-family: 'Roboto Flex', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+button:not(.btn-interact, .filter-btn) {
+  background-color: transparent;
+  border: 2px solid var(--btn-background);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-weight: 700;
+  height: 3em;
+  overflow: hidden;
+  transition-duration: 200ms;
+}
+
+button:disabled:not(.btn-interact) {
+  background-color: lightgray;
+  border: 2px solid lightgray;
+  color: grey;
+}
+
+button:hover:not(:disabled, .btn-interact, .filter-btn) {
+  background-color: var(--btn-background);
+}
+
+button:active:not(:disabled, .btn-interact, .filter-btn) {
+  background-color: var(--btn-background-clicked);
+  border: 2px solid var(--btn-background-clicked);
+}
+
+li.done {
+  text-decoration: line-through;
+}
